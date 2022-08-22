@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="header">
+        <img
+          src="https://jgthms.com/web-design-in-4-minutes/web-design-in-4-minutes.png"
+          alt="Logo"
+        />
+        <h1>Web Design in 4 minutes</h1>
+        <a href="//kavin.me">by Kavin Valli</a>
+      </header>
+      <main>
+        <div id="first">
+          <p>
+            Let's say you have a product, a portfolio, or just an idea you want
+            to share with everyone on your own website. Before you publish it on
+            the internet, you want to make it look attractive, professional, or
+            at least decent to look at.
+          </p>
+          <p>
+            What is the <a href="#content" class="action">first thing</a> you
+            need to work on?
+          </p>
+        </div>
+        <div id="content" class="hidden">
+          <h2>Content</h2>
+          <p>
+            The purpose of <strong>design</strong> is to enhance the
+            presentation of the content it's applied to. It might sound obvious
+            but content being the <strong>primary</strong> element of the
+            website, it should not be established as an afterthought.
+          </p>
+          <p>
+            Written content, like the paragraph you're currently reading, makes
+            up for more than 90% of the Web. Styling this textual content will
+            go a long way.
+          </p>
+          <p>
+            Let's assume you've already finalised the content you want to
+            publish and just created an empty style.css file, what is the
+            <a href="#centering" class="action">first rule</a> you can write?
+          </p>
+        </div>
+        <div id="centering" class="hidden">
+          <h2>Centering</h2>
+          <p>
+            Long lines of text can be hard to parse, and thus hard to read.
+            Setting a limit of characters per line greatly enhances the
+            readability and appeal of a wall of text.
+          </p>
+          <pre>
+body {
+  margin: 0 auto;
+  max-width: 50em;
+}
+        </pre
+          >
+          <p>
+            After styling the text blocks, what about styling the
+            <a href="#font-family" class="action">text itself</a>?
+          </p>
+        </div>
+        <div id="font-family" class="hidden">
+          <h2>Font family</h2>
+          <p>
+            The browser's font defaults to <code>"Times"</code>, which can look
+            unappealing (mostly because it is the "unstyled" font). Switching to
+            a <strong>sans-serif</strong> font like <code>"Helvetica"</code> or
+            <code>"Arial"</code> can vastly improve the look of your page.
+          </p>
+          <pre>
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+        </pre
+          >
+          <p>
+            While this makes the text more appealing, let's also make it
+            <a href="#spacing" class="action">more readable</a>.
+          </p>
+        </div>
+        <div id="spacing" class="hidden">
+          <h2>Spacing</h2>
+          <p>
+            When a page looks "broken" to a user, it's usually a
+            <strong>spacing</strong> issue. Providing space both
+            <i>around</i> and <i>within</i> your content can increase the appeal
+            of your page.
+          </p>
+          <pre>
+body {
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+        </pre
+          >
+          <p>
+            While the layout has greatly improved so far, let's apply more
+            <a href="#color-contrast" class="action">subtle changes</a>.
+          </p>
+        </div>
+        <div id="color-contrast" class="hidden">
+          <h2>Color contrast</h2>
+          <p>
+            Black text on a white background can be harsh on the eyes. Opting
+            for a softer shade of black for body text makes the page more
+            <strong>comfortable</strong> to read.
+          </p>
+          <pre>
+body {
+  color: #555;
+}
+        </pre
+          >
+          <p>
+            And in order to keep a decent level of <strong>contrast</strong>,
+            let's pick a darker shade for <strong>important</strong> words
+          </p>
+          <pre>
+h1,
+h2,
+strong {
+  color: #333;
+}
+        </pre
+          >
+          <p>
+            While most of the page has been improved visually, some elements
+            (like the code snippets) still seem
+            <a href="#balance" class="action">out of place</a>.
+          </p>
+        </div>
+        <div id="balance" class="hidden">
+          <h2>Balance</h2>
+          <p>
+            It only takes a few additional touches to correct the balance of the
+            page:
+          </p>
+          <pre>
+code,
+pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+        </pre
+          >
+          <p>
+            At this point, you might want to make your page stand out and give
+            it
+            <a href="#primary-color" class="action">identity</a>.
+          </p>
+        </div>
+        <div id="primary-color" class="hidden">
+          <h2>Primary color</h2>
+          <p>
+            Most brands have a <strong> primary </strong> color that acts as a
+            visual accent. On a website, this accent can be used to provide
+            emphasis on interactive elements, like <strong>links</strong>.
+          </p>
+          <pre>
+a {
+  color: #f66666;
+}
+        </pre
+          >
+          <p>
+            But to keep the balance, we will need some
+            <a href="#secondary-colors" class="action">additional colors</a>.
+          </p>
+        </div>
+        <div id="secondary-colors" class="hidden">
+          <h2>Secondary colors</h2>
+          <p>
+            The accent color can be complemented with more subtle shades, to be
+            used on borders, backgrounds, or even the body text.
+          </p>
+          <pre>
+body {
+  color: #566b78;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+pre {
+  border-left: 2px solid #69c;
+}
+        </pre
+          >
+          <p>
+            Having changed the shades, why not change the
+            <a href="#custom-font" class="action">shapes</a>...
+          </p>
+        </div>
+        <div id="custom-font" class="hidden">
+          <h2>Custom font</h2>
+          <p>
+            Since text is the main content of a webpage, using a
+            <strong>custom font</strong> gives the page even more noticeable
+            identity.
+          </p>
+          <p>
+            While you can embed your own webfont or use an online service like
+            <a href="//typekit.com" target="_blank">Typekit</a>, let's use
+            <code>"Roboto"</code> from the free
+            <a href="//fonts.google.com" target="_blank">Google Fonts</a>
+            service:
+          </p>
+          <pre>
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+        </pre
+          >
+          <p>
+            After enhancing your identity through text, how about adding a
+            <a href="#images" class="action">thousand words</a>...
+          </p>
+        </div>
+        <div id="images" class="hidden">
+          <img
+            src="https://jgthms.com/web-design-in-4-minutes/images.png"
+            alt=""
+          />
+          <p>
+            Graphics and icons can be used either as ornaments to support your
+            content, or actively take part in the message you want to convey.
+          </p>
+          <p>
+            Let's enhance our header with a nice
+            <strong>background image</strong> from
+            <a href="https://unsplash.com/photos/qH36EgNjPJY" target="_blank"
+              >Unsplash</a
+            >
+          </p>
+          <pre>
+header {
+  background-color: #263d36;
+  background-image: url("header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+        </pre
+          >
+          <p>Let's also add a logo</p>
+          <pre>
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+        </pre
+          >
+          <p>Let's take that opportunity to enhance the text styles.</p>
+          <pre>
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header a {
+  border: 1px solid #f66666;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  #f66666;
+  color: white;
+}
+        </pre
+          >
+          <p><a href="#header">And voila</a>!</p>
+          <p>
+            We've designed a decent page in just a few minutes, following basic
+            principles of web design.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
